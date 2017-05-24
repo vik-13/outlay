@@ -1,0 +1,12 @@
+<div class="inner-page">
+  <div class="inner-container white-frame-0">
+    <md-list>
+      <h3 md-subheader>Incomes</h3>
+      <md-list-item *ngFor="let coin of data">
+        <md-icon md-list-avatar>mood</md-icon>
+        <h4 md-line>{{coin.amount}}</h4>
+        <p md-line> {{coin.description}} </p>
+      </md-list-item>
+    </md-list>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.internal-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-sidenav-container {
+  flex: 1;
+}
+
+.main-content {
+  height: 100%;
+}
+
+.mat-sidenav {
+  width: 240px;
+}
+
+.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.filter-toolbar {
+  background: #ffffff;
+}

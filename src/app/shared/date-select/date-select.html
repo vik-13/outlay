@@ -1,0 +1,11 @@
+<div class="date-select-container flex-block">
+  <md-select class="flex-3" placeholder="Day" [(ngModel)]="selectedDate.day" (change)="changeDate($event)">
+    <md-option *ngFor="let day of days" [value]="day">{{day}}</md-option>
+  </md-select>
+  <md-select class="flex-3" placeholder="Month" [(ngModel)]="selectedDate.month" (change)="changeDate($event)">
+    <md-option *ngFor="let month of months" [value]="month.code">{{month.name}}</md-option>
+  </md-select>
+  <md-select class="flex-3" placeholder="Year" [(ngModel)]="selectedDate.year" (change)="changeDate($event)">
+    <md-option *ngFor="let year of years" [value]="year">{{year}}</md-option>
+  </md-select>
+</div>

@@ -1,0 +1,18 @@
+<div class="inner-page">
+  <div class="inner-container white-frame-0">
+    <md-list *ngFor="let group of groupedData">
+      <h3 class="flex-block" md-subheader>
+        <span>{{group.date}}</span>
+        <span class="flex"></span>
+        <span>Total per day: -{{group.amount}}</span>
+      </h3>
+      <md-list-item *ngFor="let record of group.records">
+        <div class="flex-block" md-line>
+          <span>{{record.description}}</span>
+          <span class="flex"></span>
+          <span>-{{record.amount}}</span>
+        </div>
+      </md-list-item>
+    </md-list>
+  </div>
+</div>

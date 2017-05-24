@@ -1,0 +1,14 @@
+:host {
+  width: 100%;
+}
+
+.menu-icon {
+  visibility: hidden;
+  margin-left: 8px;
+}
+
+:host:hover {
+  .menu-icon {
+    visibility: visible;
+  }
+}

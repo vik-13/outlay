@@ -1,0 +1,36 @@
+<div class="internal-page">
+  <md-toolbar color="primary">
+    <span>Wallet</span>
+    <span class="flex"></span>
+    <div>
+      <button md-icon-button [mdMenuTriggerFor]="menu">
+        <md-icon>menu</md-icon>
+      </button>
+      <md-menu #menu="mdMenu">
+        <button md-menu-item (click)="signOut()">
+          <md-icon>input</md-icon>
+          <span>Sign out</span>
+        </button>
+      </md-menu>
+    </div>
+  </md-toolbar>
+  <md-sidenav-container>
+    <md-sidenav mode="side" opened="true">
+      <md-nav-list>
+        <a md-list-item routerLinkActive="active" [routerLink]="['/dashboard']">Dashboard</a>
+        <h3 md-subheader>Outcomes by</h3>
+        <!--<a md-list-item routerLinkActive="active" [routerLink]="['/all']">All</a>-->
+        <a md-list-item routerLinkActive="active" [routerLink]="['/outcomes', 'day']">day</a>
+        <a md-list-item routerLinkActive="active" [routerLink]="['/outcomes', 'month']">month</a>
+        <h3 md-subheader>Incomes</h3>
+        <a md-list-item routerLinkActive="active" [routerLink]="['/incomes']">List</a>
+        <!--<a md-list-item routerLinkActive="active" [routerLink]="['/predictions']">Predictions</a>-->
+      </md-nav-list>
+    </md-sidenav>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+
+      <add-coin></add-coin>
+    </div>
+  </md-sidenav-container>
+</div>
