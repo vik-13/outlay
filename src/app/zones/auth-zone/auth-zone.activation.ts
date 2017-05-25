@@ -10,7 +10,6 @@ export class AuthZoneActivation implements CanActivate{
   authSubscriber: any;
 
   constructor(private af: AngularFireAuth, private router: Router, private wallet: WalletService) {
-    console.log('test1');
     this.isAuthorized = new Observable((observer) => {
       this.authSubscriber = this.af.authState.subscribe((auth) => {
         if (auth) {

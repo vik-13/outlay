@@ -1,24 +1,24 @@
-//.mat-input-container {
-//  width: 100%;
-//}
-//
-//.mat-select-trigger {
-//  margin: 1em 0 !important;
-//
-//  .mat-select-placeholder {
-//    bottom: 6px;
-//
-//    &.mat-floating-placeholder {
-//      bottom: 0;
-//      top: -24px !important;
-//    }
-//  }
-//
-//  .mat-select-underline {
-//    bottom: 7px !important;
-//  }
-//
-//  .mat-select-value {
-//    bottom: 12px !important;
-//  }
-//}
+.mat-input-container {
+  width: 100%;
+}
+
+.mat-select-trigger {
+  margin: 1em 0 !important;
+
+  .mat-select-placeholder {
+    bottom: 6px;
+
+    &.mat-floating-placeholder {
+      bottom: 0;
+      top: -24px !important;
+    }
+  }
+
+  .mat-select-underline {
+    bottom: 7px !important;
+  }
+
+  .mat-select-value {
+    bottom: 12px !important;
+  }
+}

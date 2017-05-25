@@ -10,11 +10,8 @@ export class InternalZoneActivation implements CanActivate{
   authSubscriber: any;
 
   constructor(private af: AngularFireAuth, private router: Router, private wallet: WalletService) {
-    console.log('test');
     this.isAuthorized = new Observable((observer) => {
-      console.log('test');
       this.authSubscriber = this.af.authState.subscribe((auth) => {
-        console.log(auth);
         if (!auth) {
           this.router.navigate(['/sign-in']);
           this.authSubscriber.unsubscribe();
